@@ -62,6 +62,11 @@ header nav ul li a {
   height: 26px;
   width: 18px;
 }
+@media screen and (max-width: 600px) {
+  .arrowBounce {
+    display: none;
+  }
+}
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -107,6 +112,9 @@ h1, h2, h3, p {
     font-size: 1.8em;
     padding-top: 40%;
   }
+  .home h3 {
+    font-size: 1.6em;
+  }
 }
 
 .work {
@@ -133,12 +141,17 @@ h1, h2, h3, p {
   background-position-x: center;
 }
 .work [data-anchor=slide3] {
-  background: url(/img/7.jpg);
+  background: url(/img/17.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .work [data-anchor=slide4] {
-  background: url(/img/8.jpg);
+  background: url(/img/13.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.work [data-anchor=slide5] {
+  background: url(/img/14.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
 }
@@ -152,16 +165,29 @@ h1, h2, h3, p {
   background-size: cover;
   background-position: center center;
 }
+.about .background-contact {
+  height: 100vh;
+  width: 40%;
+  background: linear-gradient(135deg, #202325, #7b7f81, transparent);
+}
+@media screen and (max-width: 970px) {
+  .about .background-contact {
+    width: 100%;
+  }
+}
 .about h2 {
   padding-bottom: 5%;
+  padding-top: 30%;
   font-size: 2rem;
+  z-index: 11;
 }
 .about p {
   line-height: 1.7;
   font-size: 1.1rem;
+  z-index: 100000;
 }
 .about button {
-  margin: 1em 1em 0 1em;
+  margin: 1em 1em 0 1.5em;
   padding: 0.6em;
   border: 1px solid white;
   border-radius: 35px;
@@ -190,9 +216,10 @@ h1, h2, h3, p {
   transition: 0.3s;
   margin: 2em 0 2em 2em;
   transition: all 0.3s ease-in-out;
+  background: #037a27;
+  border-radius: 50%;
 }
 .contact svg:hover {
-  fill: #10A43C;
   transform: scale(1.2);
 }
 .contact p {
