@@ -25,11 +25,17 @@ header {
   width: calc(100% - 2em);
   background: transparent;
 }
+@media screen and (max-width: 600px) {
+  header ul#nav-bar {
+    padding-top: 0.5em;
+  }
+}
 header a {
   text-decoration: none;
   color: white;
   text-shadow: 2px 2px 2px rgba(3, 122, 39, 0.3);
   transition: 1s;
+  font-weight: bold;
 }
 header a:hover {
   background-image: linear-gradient(transparent 90%, rgba(1, 248, 75, 0.6) 10%);
@@ -157,7 +163,7 @@ h1, h2, h3, p {
 }
 
 .bg-text {
-  background: linear-gradient(to top, #037a27 100%, transparent 90%, transparent);
+  background: linear-gradient(to top, #005e1c 100%, transparent 90%, transparent);
 }
 
 .about {
@@ -183,21 +189,21 @@ h1, h2, h3, p {
 }
 .about p {
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   z-index: 100000;
 }
 .about button {
   margin: 1em 1em 0 1.5em;
   padding: 0.6em;
   border: 1px solid white;
-  border-radius: 35px;
-  color: #037a27;
+  border-radius: 55px;
+  color: #005e1c;
   font-size: 1.3rem;
   cursor: pointer;
   transition: 0.7s;
 }
 .about button:hover {
-  background: #037a27;
+  background: #005e1c;
   color: white;
 }
 
@@ -216,7 +222,7 @@ h1, h2, h3, p {
   transition: 0.3s;
   margin: 2em 0 2em 2em;
   transition: all 0.3s ease-in-out;
-  background: #037a27;
+  background: #005e1c;
   border-radius: 50%;
 }
 .contact svg:hover {
@@ -227,12 +233,13 @@ h1, h2, h3, p {
 }
 .contact .mailto {
   text-decoration: none;
-  background-color: #037a27;
+  background-color: #005e1c;
   color: white;
-  font-size: 1.2rem;
+  padding: 0.1em;
+  font-size: 1.3rem;
 }
 .contact .mailto:hover {
-  color: #037a27;
+  color: #005e1c;
   background-color: white;
   cursor: pointer;
   text-decoration: underline;
@@ -247,11 +254,11 @@ h1, h2, h3, p {
 }
 .contact footer a {
   text-decoration: none;
-  background-color: #037a27;
+  background-color: #005e1c;
   color: white;
 }
 .contact footer a:hover {
-  color: #037a27;
+  color: #005e1c;
   background-color: white;
   cursor: pointer;
   text-decoration: underline;

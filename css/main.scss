@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 $bg-text: rgba(1, 248, 75, 0.6);
-$bg-about: rgb(3, 122, 39);
+$bg-about: rgb(0, 94, 28);
 
 
 html, body {
@@ -23,6 +23,13 @@ html, body {
 }
 
 header {
+
+    @media screen and (max-width: 600px) {
+        ul#nav-bar {
+            padding-top: 0.5em;
+        }
+    }
+
     position: absolute;
     position: fixed;
     padding: 1em;
@@ -37,6 +44,7 @@ header {
         color: white;
         text-shadow: 2px 2px 2px rgba(3, 122, 39, 0.3);
         transition: 1s;
+        font-weight: bold;
 
     }
 
@@ -67,6 +75,7 @@ header {
             padding: 1em;
         }
 
+        
     }
 }
 
@@ -221,7 +230,7 @@ h1, h2, h3, p {
 
     p {
         line-height: 1.7;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         z-index: 100000;
     }
 
@@ -232,7 +241,7 @@ h1, h2, h3, p {
        
         padding: 0.6em;
         border: 1px solid white;
-        border-radius: 35px;
+        border-radius: 55px;
         color: $bg-about;
         font-size: 1.3rem;
         cursor: pointer;
@@ -282,7 +291,8 @@ h1, h2, h3, p {
         text-decoration: none;
         background-color: $bg-about;
         color: white;
-        font-size: 1.2rem;
+        padding: 0.1em;
+        font-size: 1.3rem;
     }
 
     .mailto:hover {
